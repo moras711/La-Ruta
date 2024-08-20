@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La ruta del café</title>
+
+    <!-- FAVICON -->
+    <link rel="stylesheet" href="img/favicon.png" type="image/x-icon">
+
+    <!--    REMIXICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+    <!-- link FONT AWESOME  all.min.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+<body>
+    <header> 
+        <div class="container">
+            <nav>
+                <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo"><img src="img/Web/nuevologo.svg" alt="" width="120px"></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#inscripciones" class="nav-link">
+                            Etapas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <a href="#PaquetesHover" class="nav-link">
+                            Paquetes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <a href="#Premios" class="nav-link">
+                            Premios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <a href="#mapa" class="nav-link">
+                            Ruta
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Formulario.html" class="nav-link">
+                            Inscribirse
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- final de header -->
+    <!-- INICIO DE SECCIÓN -->
+    <main>
+        <section class="Mapa-uno" id="MapaUno">
+            <article class="container-text">
+                <div class="text-sobre-eta">
+                        <div class="text-fondo-eta"><p>Segunda Etapa</p></div>
+                        <div class="texto-sobre-eta"><p>Segunda Etapa</p></div>
+                </div>
+            </article>
+            <div class="container">
+                <figure class="contenedor-mapas">
+                    <figure class="Info-mapa">
+                        <h2 class="titulos-etados">
+                            22 de noviembre del 2024
+                        </h2>
+                        <p class="info-dos">
+                            Locación: Hostel Iyok Ami. <br>Alineación de salida: 8:30 a.m- 8:50 a.m.<br>Salida: 9:00 a.m. <br>Meta: Parque Hernesto Zumbado.<br>Total de kilometros: 143 km.
+                        </p>
+                        <a href="Formulario.html" class="cta-eta-dos">
+                            INSCRIBETE YA
+                        </a>
+                    </figure>
+                    <figure class="mapa-info-img">
+                        <a href="https://www.komoot.com/es-es/tour/1666721425" target="_blank">
+                        <img src="../COPIAAAAAA/img/Web/etados.jpg" alt="">
+                        </a>
+                    </figure>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <article>
+            <div class="contenido-footer">
+                    <a href="index.html" class="logo-footer"><img src="img/Web/nuevologo.svg" alt="logo" width="120px"></a>
+                    <ul class="text-footer">
+                        <li>
+                            <a href="Formulario.html">Inscribirse</a>
+                        </li>
+                        <li>
+                            <a href="#patrocinadores">Patrocinadores</a>
+                        </li>
+                        <li>
+                            <a href="#inscripciones">etapas</a>
+                        </li>
+                    </ul>        
+                    <ul class="text-dos">
+                        <li>
+                            <a href="#PaquetesHover">Paquetes <br></a>
+                        </li>
+                        <li>
+                            <a href="#mapa">Ruta completa <br></a>
+                        </li>
+                        <li>
+                            <a href="#Premios">Premios <br></a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <span class="footer__copy">
+                    &#169; All Rights Reserved By AMSDesing
+                    <div class="footer__social">
+                        <a href="http://facebook.com/" target="_blank">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+                        <a href="http://instagram.com/" target="_blank">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="http://twitter.com/" target="_blank">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+                    </div>
+                </span>
+        </article>
+    </footer>
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+
+        <!-- SCROLLREVEAL -->
+        <script src="js/main.js"></script>
+    <!-- java -->
+    <script>
+        /*espacio en memoria*/
+        /*cree la constante, se va a llamar selecElement y asigne un valor
+        una funcion es un fragmento de codígo que se encarga de hacer algo a la vez, se pueden usar tantas veces como quiera, los parametros son los que estan dentro de los parentesís, estos guardan argumentos, ejemplo funcion angelly usted va a sumar dos numeros, yo necesito la materia prima que son los parametros, distinto funcion angelly usted pide 2 numeros y haga la suma. Sí los parentesís estan solos es porque no necesita la materia prima(info) para funcionar*/
+        /*cree un espacio en memoria que me guarde si di click en la pantalla y guardar quién es el papá de quién di click, di click sobre lo que sea y el recupera el body. */
+        const selecElement = function(element){
+            /*retorne del documento (todo el html) primer selector body (querySelector)
+            vaya al documento y busque el primer selector (esta funcion si mande info) */
+            return document.querySelector(element);
+        }
+        /*de todo lo que usted sabe del body en esta variable va a quedar guardado a alguien que se llame menu-toggle quién tiene a menú-toggle, el div en este llega la info
+        crea un espacio en memoría, select element ya sabe la info del body, entonces vaya y revise quien se llama así, (tiene los iconos) la info esta dentro de menu toggle
+        este revisa*/
+        let menuToggle = selecElement('.menu-toggle');
+        /*con este llego a donde voy a modificar, a traves de menu toggle. 
+        cuando se encontro al icono tengo que modificar la parte estetica del body
+        este modifica*/
+        let body = selecElement('body');
+        /*Sí dentro suyo usted escucha un evento click ejecute esta funcion
+        de lo que usted sabe quiero que esuche que hacen en el body y de todo lo que puede pasar quier que se encargue donde dan la click (dio ckick sobre quién?) revise si esta dando click dentro del div de icono, si da click abra la funcion(en esta funcion solo necesito que haga una cosa)*/
+        menuToggle.addEventListener('click',function(){
+            /*aqui le estoy diciendo al body que le voy a asignar la clase open.
+            vaya al body(al let body que es la que ubica al body rey) vaya a la lista de clases y le agrega esta clase open o el nombre que le pongamos. (aquí sin punto porque atrás le dije que si o si es una clase)
+            */
+            body.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
