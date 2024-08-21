@@ -581,6 +581,10 @@ figure .opciones{
     justify-content: center;
     align-items: center;
 }
+.mi-nombre{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+}
 footer{
     background-color: #3B3B3C;
     background-image: url(../img/Web/mapita2.png);
@@ -627,10 +631,10 @@ footer{
     column-gap: 1.5rem; /*este le dio espacio entre los logos*/
 }
 .footer__social a{
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-radius: .5rem;
     display: grid;
     place-items: center; /*mezcla de justify content y aling items*/
@@ -1072,7 +1076,7 @@ h1{
 
 @media screen and (max-width: 720px){
     .container{
-        padding: 0 0rem;
+        padding: 0 0.6rem;
     } 
     .logo{
         padding: 0 2.4rem;
@@ -1080,7 +1084,7 @@ h1{
     /*===== Textos del título ==== */
     
     .text-fondo {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         display: flex;
     }
     .texto-sobre {
@@ -1296,8 +1300,15 @@ h1{
 }
 
 @media screen and (max-width: 500px) {
+    .text-fondo {
+        font-size: 1.75rem;
+        display: flex;
+    }
+    .texto-sobre {
+        font-size: 1.5rem;
+    }
     .container{
-        padding: 0 0rem;
+        padding: 0 0.8rem;
     } 
     /* Mapa */
     .img-mapa img{
@@ -1312,6 +1323,7 @@ h1{
     }
     /* final de mapa info */
     /* Final de mapa */
+
     /* =========Paquetes========== */
     .contenedores figure img{
         width: 15rem;
@@ -1371,6 +1383,7 @@ h1{
     .Camisa-dos img{
         width: 15rem; 
         height: 18rem;
+        margin-top: 2.5rem;
     }
     .Camisa-tres img{
         width: 12rem; 
