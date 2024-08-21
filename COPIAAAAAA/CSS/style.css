@@ -1080,7 +1080,7 @@ h1{
     /*===== Textos del título ==== */
     
     .text-fondo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         display: flex;
     }
     .texto-sobre {
@@ -1174,6 +1174,14 @@ h1{
     .etapas{
         padding: 70px;
     }
+    .p-eta{
+        font-size: 1rem;
+    
+    }
+    .h2-eta{
+        font-size: 1.5rem;
+    } 
+
     /* ======== Final de Etapas======= */
 
     /* ========= Eventos ======= */
@@ -1218,11 +1226,13 @@ h1{
         height: 24rem;
     }
     /* =======Final de camisas */
+
     /* ========= Premios ======= */
     .Premios article p{
         font-size: 2rem;
     }
     /* ========= Final de Premios ======= */
+
     /* ===== Información de los paquetes ==== */
     .contenido-filas{
         gap: 1rem;
@@ -1235,6 +1245,7 @@ h1{
     }
     /* ===== Final de Información de los paquetes ==== */
     /* ========= Etapas Especificas ======== */
+
 .Mapa-uno{
     display: block
 }
@@ -1271,15 +1282,19 @@ h1{
         margin-bottom: 1rem;
     }
 /* ========= Final de Etapas Especificas ======== */
+
+/* =====footeer===== */
     .text-footer a{
         flex-direction: column;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     .text-dos a{
         flex-direction: column;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
+/* ===== final de footeer===== */
 }
+
 @media screen and (max-width: 500px) {
     .container{
         padding: 0 0rem;
@@ -1313,8 +1328,32 @@ h1{
         font-size: 0.8rem;
     }
      /* ========= Final de Paquetes========== */
+
+    /* ==== etapas===== */
+    .etapas{
+        padding: 70px;
+    }
+    .p-eta{
+        font-size: 0.8rem;
     
-    /* Final de Paquetes */
+    }
+    .h2-eta{
+        font-size: 1.5rem;
+    } 
+    .btn-eta a{
+        font-size: 1rem;
+    }
+    /* ====final de etapas===== */
+
+    /*=====Eventos===== */
+    .p-eta{
+        font-size: 1rem;
+    
+    }
+    .h2-eta{
+        font-size: 1.5rem;
+    } 
+/* ======Final de eventos===== */
     /* ======Camisas======= */
     .camisetas{
         display: flex;
@@ -1342,6 +1381,18 @@ h1{
     #sectionHover{
         padding-top: 0rem;
     }
+/* ========= final de Eventos ======= */
+
+    /* =====footeer===== */
+    .text-footer a{
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+    .text-dos a{
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+/* ===== final de footeer===== */
     /* Scroll */
     .scrollup{
         display: none;
