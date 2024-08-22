@@ -1287,7 +1287,15 @@ h1{
         margin-bottom: 1rem;
     }
 /* ========= Final de Etapas Especificas ======== */
-
+    /* ==== Paquetes info ==== */
+    .precio-pq{
+        font-size: 1rem;
+    }
+    .Info-paq-uno{
+        background: url(../img/Web/paquetes-fondo-tablet.png) center no-repeat;
+        background-size: cover;
+    }
+    /* ==== Final de Paquetes info ==== */
 /* =====footeer===== */
     .text-footer a{
         flex-direction: column;
@@ -1407,6 +1415,11 @@ h1{
         font-size: 0.9rem;
     }
 /* ===== final de footeer===== */
+    /* ==== Paquetes info ==== */
+    .precio-pq{
+        font-size: 0.8rem;
+    }
+    /* ==== Final de Paquetes info ==== */
     /* Scroll */
     .scrollup{
         display: none;
