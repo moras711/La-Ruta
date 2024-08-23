@@ -27,11 +27,13 @@ html{
     color: black;
     scroll-behavior: smooth; 
 }
+ul{
+    list-style: none;
+}
 
 a{
     text-decoration: none;
 }
-
 .container{
     width: 100%;
     max-width: 144rem;
@@ -86,90 +88,114 @@ header{
     z-index: 100;
     background-image: linear-gradient(to bottom,rgba( 0, 0, 0,.9),transparent);
     position: fixed;
-}
-nav{
-    height: 7.2rem;
-    display: flex;
-    align-items: center;
-}
-nav::before{
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0,.8);
-    z-index: 1000;
-    opacity: 0;
-    transform: scale(0);
-    transition: opacity .5s;
-}
-.menu-toggle{
-    color: white;
-    font-size: 2.2rem;
-    position: absolute;
-    top: 50%;
-    right: 2.5rem;
-    cursor: pointer;
-    z-index: 1500;
-    transform: translateY(-50%);
+    transition: box-shadow .4s;
 }
 
-.fa-times{
-    display: none;
+.nav{
+    position: relative;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
 }
-.logo{
+.nav__logo{
     margin-bottom: 1rem;
     color: white;
     font-size: 2rem;
     font-weight: 600;
 }
-.nav-list{
-    font-family: 'Bebas-editada';
-    font-size: 5.4rem;
-    list-style: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 100vh;
-    background-color: #252525;
+.nav__logo div{
+    padding: 6px;
+    border-radius: .5rem;
+} 
+.nav__toggle,
+.nav__close{
     display: flex;
-    padding: 4.4rem;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 1250;
-    transform: translateX(-100%);
-}
-.open .fa-times{
-    display: block;
-}
-.open.fa-bars{
-    display: none;
-}
-.open .nav-list{
-    transform: translateX(0);
-}
-.open nav::before{
-    opacity: 1;
-    transform: scale(1);
-}
-.nav-item{
-    border-bottom: 2px solid rgba(255, 255, 255,.3);
-}
-.nav-link{
-    display: block;
+    font-size: 1.5rem;
     color: white;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    letter-spacing: 2px;
-    margin-right: -2px;
-    transition: .3s;
+    cursor: pointer;
+} 
+
+@media screen and (max-width:1150px) {
+    .nav__menu{
+        position: fixed; /*cuando se pone fixed se pone el top y la posición,por ejemplo siempre tienen que ir 2 pocisiones, top es la base en 0 y el left o el right es la posción 2 en donde se va a colocar*/
+        top: -100%; /*Cuando de click el menu baje, abra, aparezca la x aquí se le puede poner left o right para que salga de un lado, el top es para que salga de arriba, entonces se pone top 0 y abajo left -100*/
+        left: 0;
+        background-color: #252525;
+        width: 100%;
+        padding-block: 4.5rem 3.5rem;
+        box-shadow: 0 4px 16px hsla(22, 100%, 8%, .2);
+        transition: top .4s;
+    }
+}    
+.nav__list{
+        text-align: center;
+        padding: 0 2.4rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .nav__link{
+        position: relative;
+        color: white;
+        font-family: 'Bebas-Editada';
+        font-size: 1.3rem;
+    }
+    .nav__link::after{ /*esto es para que me cree un subrayado, pongo el cursor y despues el subrayado*/
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        left: 0; /*este pegado a la izquierda*/
+        bottom: -.5rem;
+        transition: width .3s;
+    }
+    .nav__link:hover::after{
+        width: 60%;
+    }
+    .nav__close{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+/* Show menu */
+.show-menu{
+    top: 0; /*por qué top 0?: porque arriba en .nav-menu le pusimos -100, esto lo que hizo fue sacarlo y con top:0 lo devuelve y lo acomoda a donde estaba anteriormente.*/
 }
-.nav-link:hover{
-    color:#87321B;
+/* Add shadow header */ /*esto es la sombra del nav digamos, está junto con el main.js para que se vea cuando hace scroll*/
+.shadow-header{
+    box-shadow: 0 4px 16px hsla(22,100%,8%,.1);
 }
+/* Active link */
+.active-link::after{
+    width: 60%;
+}
+@media screen and (min-width:1150px){
+    .container{
+        margin-inline: auto;
+    }
+    .section{
+        padding-block: 7rem 2rem;
+    }
+    .section__title{
+    margin-bottom: 4.5rem;
+    }
+    .nav{
+        height: 3.5rem; /**/
+    }
+    .nav__toggle,
+    .nav__close{
+        display: none;
+    }
+    .nav__list{
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+}
+
+
 .hero{
     width: 100%;
     height: 100vh;
@@ -872,6 +898,26 @@ button:hover {
 
 /* Estilos adicionales para pantallas más pequeñas */
 @media (max-width: 600px) {
+    .container{
+        margin-inline: auto;
+    }
+    .section{
+        padding-block: 7rem 2rem;
+    }
+    .section__title{
+    margin-bottom: 4.5rem;
+    }
+    .nav{
+        height: 3.5rem; /**/
+    }
+    .nav__toggle,
+    .nav__close{
+        display: none;
+    }
+    .nav__list{
+        flex-direction: row;
+        column-gap: 4rem;
+    }
     h1 {
         font-size: 20px;
     }
@@ -894,10 +940,8 @@ button:hover {
 /* ==================== Final del Formulario de inscripción ==================== */
 
 
-@media screen and (min-width: 920px){ 
+/* @media screen and (min-width: 920px){ 
 
-    
-/* ========= Nav y Banner ======= */
 .menu-toggle{
     display: none;
 }
@@ -934,8 +978,8 @@ nav{
     bottom: -3px;
     height: 2px;
 }
-/* ========= Final Nav y Banner ======= */
-}
+
+} */
 
 
 @media screen and (max-width: 1200px){
@@ -1309,6 +1353,7 @@ h1{
 }
 
 @media screen and (max-width: 500px) {
+    
     .text-fondo {
         font-size: 1.75rem;
         display: flex;
