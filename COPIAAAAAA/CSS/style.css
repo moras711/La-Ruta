@@ -1045,7 +1045,7 @@ nav{
 } */
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1079px){
 
 /*===== Textos del título ==== */
 .text-fondo {
@@ -1102,12 +1102,32 @@ h1{
     padding-bottom: 1rem;
 }
 /* ======= Final de Mapa ========= */
+/* ======== Paquetes======== */
+.contenedores{
+    gap: 1.5rem;
+}
+/* ======== Final de Paquetes======== */
 /* ======== Etapas======= */
 .etapas{
     padding: 70px;
 }
 /* ======== Final de Etapas======= */
+.Camisa-uno img{
+    width: 20rem; 
+    height: 25rem;
+}
+.Camisa-dos{
+    width: 21rem; 
+    height: 25rem;
+}
+.Camisa-tres{
+    width: 14rem; 
+    height: 24rem;
+}
 /* ========= Eventos ======= */
+.contenedor{
+    gap: 3rem;
+}
 .contenedor figure{
     width: 350px;
     height: 350px;
